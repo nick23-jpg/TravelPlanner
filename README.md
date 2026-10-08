@@ -21,6 +21,9 @@ The application will have:
 - **Trip Dashboard:** Provide a simple overview of the itinerary, budget, and important trip information.
 - **Trip Creation:** Create trips with destinations, dates, and basic details.
 - **Accommodation & Transportation:** Store hotel, flight, rental, and other travel details.
+- **Travel Information:** Store important information about the destinations
+- **Account View**
+- **Software Information:** The version of the software
 
 ## Technologies Used
 

@@ -4,7 +4,7 @@
 Travelers often use multiple applications to organize destinations, activities, accommodations, schedules, and expenses, making trip planning difficult to manage in one place. A travel planner application will be developed to centralize trip planning by allowing users to create itineraries, track budgets and expenses, and organize travel information, with support for planning trips with family or friends.
 
 ## Stakeholder Analysis
-The primary stakeholders are **travelers**, who will use the application to organize destinations, activities, accommodations, schedules, and expenses.
+The primary stakeholders are **travelers**, **group organizers** and **administrators** who will be resposible in utilizing the application to organize destinations, activities, accommodations, schedules, and expenses.
 
 **Families and groups of friends** are secondary stakeholders who may use shared itineraries and budget tracking.
 
@@ -22,8 +22,8 @@ The application will have:
 - **Trip Creation:** Create trips with destinations, dates, and basic details.
 - **Accommodation & Transportation:** Store hotel, flight, rental, and other travel details.
 - **Travel Information:** Store important information about the destinations
-- **Account View**
-- **Software Information:** The version of the software
+- **Account View:** Stores personal information, planned trips, saved destinations, and contact information
+- **Software Information:** The developers, contact information and version of the software
 
 ## Technologies Used
 

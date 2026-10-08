@@ -3,6 +3,9 @@
 ## Problem Statement
 Travelers often use multiple applications to organize destinations, activities, accommodations, schedules, and expenses, making trip planning difficult to manage in one place. A travel planner application will be developed to centralize trip planning by allowing users to create itineraries, track budgets and expenses, and organize travel information, with support for planning trips with family or friends.
 
+## Application Context
+The travel planner software will assist users in planning and organizing their trips by allowing them to create, view, and manage trip details. It will include features such as itinerary planning, expense tracking, budget management, calendar scheduling, group coordination, and travel information. 
+
 ## Stakeholder Analysis
 The primary stakeholders are **travelers**, **group organizers** and **administrators** who will be resposible in utilizing the application to organize destinations, activities, accommodations, schedules, and expenses.
 

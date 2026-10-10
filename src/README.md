@@ -1,5 +1,7 @@
 # TravelPlanner — Source Code
 
+TravelPlanner for CP3490 Software Engineering, Fall 2026
+
 ## Overview
 
 This directory contains the source code for TravelPlanner, an application designed to centralize trip planning by allowing users to organize travel information in one place. The application supports trip creation, itinerary management, budget and expense tracking, and the organization of accommodation and transportation details.

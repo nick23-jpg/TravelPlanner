@@ -1,5 +1,7 @@
 # Product Vision
 
+TravelPlanner for CP3490 Software Engineering, Fall 2026
+
 ## Vision Statement
 
 **For** travelers planning trips alone or with family and friends

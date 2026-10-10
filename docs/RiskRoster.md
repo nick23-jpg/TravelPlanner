@@ -1,28 +1,22 @@
 # Risk Roster
-
-TravelPlanner · CP3490 Software Engineering, Fall 2026
-
-> **How to use this template (delete this box before submitting):**
-> **[FILL]** = write this yourselves · `___` = a value your team decides.
->
-> 1. **Probability and Impact:** rate every risk Low, Medium or High together as a team.
-> 2. **Mitigation:** R-01 to R-03 show the style: a concrete action, ideally with a deadline. Write the rest.
-> 3. **Add at least one risk of your own** in R-11/R-12 (something you've actually noticed: a busy month, a skill gap, a tool problem). Delete the R-12 row if unused.
-
-Each risk is rated by **Probability** (how likely it is) and **Impact** (how much it would hurt the project), both Low, Medium or High. The team reviews the ratings at each sprint retrospective.
-
+ 
+TravelPlanner for CP3490 Software Engineering, Fall 2026
+ 
+Each risk is rated by **Probability** (how likely it is to happen) and **Impact** (how much it would hurt the project if it did), both Low, Medium or High. Risks are listed from most to least serious. The team reviews this roster at every sprint retrospective, updates the ratings, and adds new risks as they appear.
+ 
 | ID | Risk | Type | Probability | Impact | Mitigation |
 | --- | --- | --- | --- | --- | --- |
-| R-01 | Accounts, invitations and shared trips need an online backend, but the current design stores data only in local JSON files. | Technical / Scope | ___ | ___ | Choose the backend (e.g. Firebase) before Sprint 1 ends. Build the single-user features first so the app works even if group features slip. |
-| R-02 | Team members are new to Git and GitHub, which could cause lost work or merge conflicts. | Knowledge gap | ___ | ___ | Each member completes a Git tutorial in week 1. Use feature branches and pull requests, and make small, frequent commits. |
-| R-03 | The team has limited experience with Kotlin and Compose Multiplatform, which slows early development. | Knowledge gap | ___ | ___ | Follow Android's Compose tutorials early. Pair-program the first features. Since the app is Android-only, consider plain Jetpack Compose, which has simpler setup. |
-| R-04 | Not enough time to test before the December deadline. | Schedule | ___ | ___ | **[FILL]** |
-| R-05 | The feature list keeps growing (calendar, notifications, search, maps, advisories were also proposed), which may be more than three people can finish in one term. | Scope | ___ | ___ | **[FILL]** |
-| R-06 | Three members with different schedules and other courses have trouble coordinating. | Team coordination | ___ | ___ | **[FILL]** |
-| R-07 | Commit history shows uneven contributions, which affects grading. | Team / Assessment | ___ | ___ | **[FILL]** |
-| R-08 | Local JSON data becomes corrupted or is lost. | Technical | ___ | ___ | **[FILL]** |
-| R-09 | External APIs for travel information (advisories, weather, maps) may be unreliable, limited or paid, or may change. | Technical | ___ | ___ | **[FILL]** |
-| R-10 | Group members' personal information (email, phone) could be exposed to people outside the trip. | Security | ___ | ___ | **[FILL]** |
-| R-11 | **[FILL]** A risk your team sees that isn't listed | ___ | ___ | ___ | ___ |
-| R-12 | **[FILL]** | ___ | ___ | ___ | ___ |
-
+| R-01 | All accounts and trips live in JSON files on one device with no cloud copy. A crash during a save, or a bug in the save code, could corrupt the files and lose every user's data. | Technical | Medium | High | Write each save to a temporary file first, then replace the original, so a crash mid-save leaves the last good version intact. Keep a backup copy of the last successful save. Validate the files when the app starts and show an error message instead of crashing (NFR-6). Unit-test saving and loading with JUnit. |
+| R-02 | Limited time to test before the December deadline leaves bugs in the final demo. | Schedule | Medium | High | Writing and passing JUnit tests is part of the Definition of Done for every backlog item, so testing happens throughout, not at the end. Freeze new features two weeks before final delivery and spend that time only on testing and fixes. |
+| R-03 | The feature list keeps growing (notifications, calendar view, maps, cross-device sync were all proposed), which could leave core features unfinished. | Scope | Medium | High | Follow the backlog's MoSCoW priorities: all Must items are finished before any Should items start. New ideas go to Future Ideas in the Product Vision, not straight into a sprint. If a sprint falls behind, Should items are cut first. |
+| R-04 | The team has limited experience with Kotlin and Compose Multiplatform, which slows early development. | Knowledge gap | Medium | High | Each member completes Android's official Compose basics tutorial before the first sprint. Pair-program the first screen so everyone learns the same structure. Since the app is Android-only, switch to plain Jetpack Compose if Multiplatform setup causes problems; it uses the same code style with simpler setup. |
+| R-05 | Group features (invitations, Organizer/Member roles, edit permissions between accounts) turn out more complex than expected. | Technical / Scope | Medium | Medium | Build them only after the single-user Must items work. Keep to two roles. Put all permission checks in the repository layer so they are written and tested in one place. If time runs short, fall back to Organizer-only editing, which still meets the core group requirements. |
+| R-06 | Date and time logic (trip dates, multi-stop dates, activity overlap checks, check-in/check-out) has edge-case bugs. | Technical | Medium | Medium | Use Java's built-in date/time classes (available from the Android 8.0 minimum). Write JUnit tests for every date validation rule in the requirements, including boundary cases such as same-day trips and activities ending exactly when another starts. |
+| R-07 | Coordinating three members with different schedules and other courses causes delays and duplicated work. | Team coordination | Medium | Medium | Hold one fixed weekly meeting. Track every task on the GitHub Projects board with an owner. Post blockers in the team chat within a day instead of waiting for the next meeting. |
+| R-08 | The commit history shows uneven contributions, which affects grading. | Team / Assessment | Medium | Medium | Each member commits their own documentation and code from their own GitHub account. Review the contributor graph at each sprint review and rebalance tasks if one person is falling behind. |
+| R-09 | One account can see or change another account's trips or personal details, or passwords are readable in the JSON file. | Security | Low | High | Store passwords and security answers only in hashed form (NFR-14). Filter every trip list by the signed-in user in the repository layer (NFR-13). Test with two accounts on the same device to confirm neither can see the other's private trips. |
+| R-10 | Something goes wrong during the final demonstration (emulator crash, missing or broken sample data). | Schedule / Assessment | Low | High | Prepare a sample data file with demo accounts and trips that can be loaded quickly. Rehearse the full demo at least twice. Keep a screen recording of a working run as a backup. |
+| R-11 | Reading and rewriting whole JSON files makes the app slow as the amount of saved data grows. | Technical | Low | Medium | Load data once when the app starts and keep it in memory; save in the background. Test with a large sample (NFR-8: 20 trips and 100 activities) and fix any slow screens early. |
+| R-12 | Accessibility problems (cut-off text at 200% font size, missing screen reader labels) are found late, when layouts are hard to change. | Technical / Quality | Medium | Low | Check each screen at 200% font size and with TalkBack as part of the Definition of Done, rather than in one pass at the end. |
+| R-13 | Merge conflicts or overwritten work as several people edit the same files, especially once app code is added. | Technical / Team | Low | Medium | Two members know the Git basics and one is experienced. The experienced member sets up the branch workflow and reviews pull requests. Everyone works on their own feature branch, pulls before starting work, and commits small and often. |
+ 

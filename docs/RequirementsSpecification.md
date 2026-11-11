@@ -34,12 +34,13 @@ TravelPlanner is an Android app for planning trips. It covers trip management, i
 | FR-1.4 | The system shall let a user delete a trip after confirming in a dialog. |
 | FR-1.5 | The system shall list all trips sorted by start date with upcoming listed first. |
 | FR-1.6 | The system shall let a user add more than one destination (stop) to a trip, each with its own arrival and departure dates inside the trip dates. |
+| FR-1.7 | Each trip shows a cover photo, matched with the destination or picked by the user. |
 
 ### 2.2 Feature 2: Itinerary Builder
 
 | ID | Requirement |
 | --- | --- |
-| FR-2.1 | The system shall let a user add an activity with a title, date and start time (required), and location, notes (optional). |
+| FR-2.1 | The system shall let a user add an activity with a title, date and start time (required), and location, notes, end time (optional). |
 | FR-2.2 | The system shall reject an activity whose date is outside the trip's start and end dates. |
 | FR-2.3 | The system shall display activities grouped by day and sorted by start time. |
 | FR-2.4 | The system shall let a user edit and delete activities. |

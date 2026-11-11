@@ -171,4 +171,4 @@ Each story links to the requirements it covers in the [Requirements Specificatio
     - Given I enter a wrong password, when I tap Sign In, then I see an error and stay signed out.
     - Given I am signed in, when I tap Sign Out, then I return to the sign-in screen and my trips are hidden.
     - Given I forgot my password, when I answer my security question correctly, then I can set a new password.
-    - Given I open my account screen, when I change my phone number and save, then members of my shared trips see the new number.
+    - Given I open my account screen, when I change my name and save, then members of my shared trips see the new name.

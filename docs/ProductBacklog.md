@@ -10,21 +10,21 @@ The backlog is ordered by priority, with the most important work at the top. Eve
 
 | Rank | ID | Item | User Story | Requirements | Priority | Points | Sprint |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | PB-01 | Create a trip | [US-01](UserStories/UserStories.md#us-01) | FR-1.1, FR-1.2 | Must | 3 | Unassigned |
-| 2 | PB-02 | Save trip data | [US-14](UserStories/UserStories.md#us-14) | FR-7.1 | Must | 5 | Unassigned |
-| 3 | PB-03 | View, edit and delete trips | [US-02](UserStories/UserStories.md#us-02) | FR-1.3, FR-1.4, FR-1.5 | Must | 3 | Unassigned |
-| 4 | PB-04 | Add activities, with overlap warning | [US-04](UserStories/UserStories.md#us-04) | FR-2.1, FR-2.2, FR-2.5 | Must | 5 | Unassigned |
-| 5 | PB-05 | Day-by-day itinerary, edit and delete | [US-05](UserStories/UserStories.md#us-05) | FR-2.3, FR-2.4 | Must | 5 | Unassigned |
-| 6 | PB-06 | Set budget and log expenses | [US-06](UserStories/UserStories.md#us-06) | FR-3.1, FR-3.2, FR-3.6 | Must | 3 | Unassigned |
-| 7 | PB-07 | Budget summary and overspend warning | [US-07](UserStories/UserStories.md#us-07) | FR-3.3, FR-3.4, FR-3.5 | Must | 5 | Unassigned |
-| 8 | PB-08 | Accommodation and transportation details | [US-08](UserStories/UserStories.md#us-08) | FR-4.1, FR-4.2, FR-4.3, FR-4.4, FR-4.6 | Must | 5 | Unassigned |
-| 9 | PB-09 | Trip dashboard | [US-13](UserStories/UserStories.md#us-13) | FR-6.1, FR-6.2 | Should | 5 | Unassigned |
-| 10 | PB-12 | Accounts, sign-in and account screen | [US-15](UserStories/UserStories.md#us-15) | FR-8.1, FR-8.2, FR-8.3, FR-8.4 | Should | 8 | Unassigned |
-| 11 | PB-13 | Invite members (accept / decline) | [US-10](UserStories/UserStories.md#us-10) | FR-5.1, FR-5.2, FR-5.5 | Should | 5 | Unassigned |
-| 12 | PB-14 | Member roles and member list | [US-11](UserStories/UserStories.md#us-11) | FR-5.3, FR-5.4, FR-5.7, FR-5.8 | Should | 5 | Unassigned |
-| 13 | PB-15 | Assign responsibilities | [US-12](UserStories/UserStories.md#us-12) | FR-5.6 | Should | 3 | Unassigned |
-| 14 | PB-10 | Multiple destinations per trip | [US-03](UserStories/UserStories.md#us-03) | FR-1.6 | Should | 3 | Unassigned |
-| 15 | PB-11 | Travel notes and emergency contacts | [US-09](UserStories/UserStories.md#us-09) | FR-4.5 | Could | 2 | Unassigned |
+| 1 | PB-01 | Create a trip | [US-01](UserStories/UserStories.md#us-01) | FR-1.1, FR-1.2 | Must | 3 | Sprint 3 |
+| 2 | PB-02 | Save trip data | [US-14](UserStories/UserStories.md#us-14) | FR-7.1 | Must | 5 | Sprint 3  |
+| 3 | PB-03 | View, edit and delete trips | [US-02](UserStories/UserStories.md#us-02) | FR-1.3, FR-1.4, FR-1.5 | Must | 3 | Sprint 3  |
+| 4 | PB-04 | Add activities, with overlap warning | [US-04](UserStories/UserStories.md#us-04) | FR-2.1, FR-2.2, FR-2.5 | Must | 5 | Sprint 3  |
+| 5 | PB-05 | Day-by-day itinerary, edit and delete | [US-05](UserStories/UserStories.md#us-05) | FR-2.3, FR-2.4 | Must | 5 | Sprint 3  |
+| 6 | PB-06 | Set budget and log expenses | [US-06](UserStories/UserStories.md#us-06) | FR-3.1, FR-3.2, FR-3.6 | Must | 3 | Sprint 3  |
+| 7 | PB-07 | Budget summary and overspend warning | [US-07](UserStories/UserStories.md#us-07) | FR-3.3, FR-3.4, FR-3.5 | Must | 5 | Sprint 3  |
+| 8 | PB-08 | Accommodation and transportation details | [US-08](UserStories/UserStories.md#us-08) | FR-4.1, FR-4.2, FR-4.3, FR-4.4, FR-4.6 | Must | 5 | Sprint 3  |
+| 9 | PB-09 | Trip dashboard | [US-13](UserStories/UserStories.md#us-13) | FR-6.1, FR-6.2 | Should | 5 | Sprint 3  |
+| 10 | PB-12 | Accounts, sign-in and account screen | [US-15](UserStories/UserStories.md#us-15) | FR-8.1, FR-8.2, FR-8.3, FR-8.4 | Should | 8 | Sprint 3  |
+| 11 | PB-13 | Invite members (accept / decline) | [US-10](UserStories/UserStories.md#us-10) | FR-5.1, FR-5.2, FR-5.5 | Should | 5 | Sprint 3  |
+| 12 | PB-14 | Member roles and member list | [US-11](UserStories/UserStories.md#us-11) | FR-5.3, FR-5.4, FR-5.7, FR-5.8 | Should | 5 | Sprint 4 |
+| 13 | PB-15 | Assign responsibilities | [US-12](UserStories/UserStories.md#us-12) | FR-5.6 | Should | 3 | Sprint 4  |
+| 14 | PB-10 | Multiple destinations per trip | [US-03](UserStories/UserStories.md#us-03) | FR-1.6 | Should | 3 | Sprint 4  |
+| 15 | PB-11 | Travel notes and emergency contacts | [US-09](UserStories/UserStories.md#us-09) | FR-4.5 | Could | 2 | Sprint 4  |
 
 **Total:** 65 points (Must: 34 · Should: 29 · Could: 2)
 

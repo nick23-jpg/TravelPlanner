@@ -44,7 +44,7 @@ The application will have:
 | --- | --- |
 | [Product Vision](docs/ProductVision.md) | Who the app is for, goals, scope and success measures |
 | [Requirements Specification](docs/RequirementsSpecification.md) | Functional and non-functional requirements |
-| [User Stories](docs/UserStories/UserStories.md) | User stories with acceptance criteria and story points |
+| [User Stories](docs/UserStories.md) | User stories with acceptance criteria and story points |
 | [Product Backlog](docs/ProductBacklog.md) | Prioritized backlog traced to user stories and requirements |
 | [Risk Roster](docs/RiskRoster.md) | Project risks with probability, impact and mitigation |
 
@@ -53,7 +53,7 @@ The application will have:
 - Kotlin
 - Java
 - Android Studio
-- Compose Multiplatform
+- Jetpack Compose
 - kotlinx.serialization
 - JSON
 - Figma
@@ -85,17 +85,13 @@ TravelPlanner/
 │
 ├── README.md
 │
-├── src/
-│   └── README.md
 │
 └── docs/
     ├── ProductVision.md
     ├── RequirementsSpecification.md
     ├── ProductBacklog.md
     ├── RiskRoster.md
-    ├── Architecture.drawio
-    └── UserStories/
-        └── UserStories.md
+    └── UserStories.md
 </pre>
 
 Sprint planning, review and retrospective documents (e.g. `docs/Sprint1Planning.md`) will be added to `/docs` as each sprint runs.
